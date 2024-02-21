@@ -360,6 +360,9 @@ footer {
 
 
 
+
+
+
 .back-to-top {
   position: fixed; /* Fixed position to keep the button in view */
   bottom: 20px; /* Distance from the bottom of the viewport */
@@ -376,4 +379,3 @@ footer {
       right: 10px;
   }
 }
-
