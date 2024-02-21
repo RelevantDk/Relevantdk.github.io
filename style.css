@@ -1,0 +1,379 @@
+
+
+.social-media-icons {
+  position: absolute; /* Or 'fixed' if desired */
+  top: 10px;
+  right: 10px;
+}
+
+.social-media-icons a {
+  display: inline-block; /* Aligns images in a row */
+  margin-left: 10px; /* Space between icons */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-media-icons a:hover {
+  opacity: 0.7; /* Slightly fade icons on hover for interaction feedback */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#banner {
+  display: block; 
+  max-width: 100%; 
+  height: auto; 
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #43cdfffc;
+  padding: 1px;
+  text-align: center;
+}
+
+#navbar {
+  overflow:auto;
+  background-color: #00bbfffc;
+  padding: 1px;
+ display:flex;
+ 
+ justify-content: center;
+ 
+
+
+  
+}
+
+
+   /* for various devices*/
+@media only screen and (max-width: 400px) {
+  #navbar {
+  overflow: hidden;
+  background-color: #00bbfffc;
+  padding: 1px;
+  display: block;
+  justify-content: center;
+
+
+
+  }
+}
+
+
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+  
+}
+
+#navbar a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+#navbar a.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.introContent {
+  padding: 15px;
+  justify-content: center;
+   margin: auto;
+   text-align: center;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Center website */
+.main {
+ justify-content: center;
+ padding: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+.row {
+  margin: 15px;
+  
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  
+}
+
+/* Clear floats after rows */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Extra Content */
+.Extracontent {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+.grid-gallery {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    gap: 10px; /* Space between thumbnails */
+    max-height: calc(250px * 2); /* Maximum height to display 2 rows of images */
+    overflow-y: auto; /* Enables vertical scroll when content exceeds max-height */
+    padding: 10px; /* Optional: Adds some padding inside the container */
+    width: 95%; /* Make the gallery slightly narrower than the full width */
+    margin: auto; /* Center the gallery */
+}
+
+.grid-gallery img {
+  width: 100%; /* Makes images responsive within grid items */
+  cursor: pointer; /* Indicates the images are clickable */
+  transition: transform 0.2s; /* Optional: Adds a slight zoom effect on hover */
+}
+
+.grid-gallery img:hover {
+  transform: scale(1.05); /* Optional: Slight zoom on hover */
+}
+
+/* Fullscreen Modal CSS */
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1000; /* Ensure the modal is on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+    
+  
+}
+
+.modal-content {
+  max-width: 100%; /* Max width to ensure some margin around the image */
+    max-height: 90%; /* Max height to ensure the image fits within the viewport */
+    object-fit: contain; /* Ensures the image fits within its bounds and retains aspect ratio */
+    
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Grid for smaller screens */
+@media (max-width: 600px) {
+  .grid-gallery {
+      grid-template-columns: repeat(2, 1fr); /* Switch to a 2-column grid for small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px; /* Space between thumbnails */
+  max-height: calc(250px * 2); /* Set max height for 2 rows, adjust based on your thumbnail size */
+  overflow-y: auto; /* Enable vertical scroll when content overflows */
+  padding: 10px; /* Optional: Adds some padding inside the container */
+  width: 95%; /* Make the gallery slightly narrower than the full width */
+  margin: auto; /* Center the gallery */
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  display: block; /* Removes space below images */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.video-thumbnail:hover img {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+  .video-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Skills {
+  background-color: aqua;
+  text-align: center;
+}
+
+#Samples {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+
+#Contact {
+ background-color: #b30083;
+ text-align: center;
+}
+
+
+
+footer {
+  background: #00bbfffc;
+  color: #000000;
+  text-align: center;
+  padding: 1px;
+}
+
+
+
+
+
+
+
+
+.back-to-top {
+  position: fixed; /* Fixed position to keep the button in view * /
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  z-index: 1000; /* Ensure it's above other content */
+  cursor: pointer; /* Change mouse pointer to indicate clickable item */
+  display: none; /* Initially hidden */
+}
+
+/* Optional: Add styles for smaller screens */
+@media (max-width: 768px) {
+  .back-to-top {
+      bottom: 10px;
+      right: 10px;
+  }
+}
+
