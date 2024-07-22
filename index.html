@@ -1,32 +1,381 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-<title>Dk's Github Homepage</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumkene's Portfolio</title>
 
-<!--Main css file-->
-<link rel="stylesheet" href="style.css">
+    <link rel='icon' href='images/NewFavIcon.png' type='image/x-icon'/ >
 
+    <!-- custom css file-->
+        <link rel="stylesheet" href="style.css">
 
-
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-
-<script type="text/javascript" src="activejs.js"></script>
-
-<link rel='icon' href='faviconRect.png' type='image/x-icon'/ >
 
 </head>
 
 
-<body>
-    
-Testing....
 
+<header>
+
+
+  
+
+  
+
+
+
+
+
+<div class="header">
+  <img id="banner" src="images/NewPageBanner.png" alt="Page Banner"> 
+  </div>
+  
+  <div id="navbar">
+    <a class="active" href="Homelink">Home</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Samples">Samples</a>
+    <a href="#Contact">Contact</a>
+  </div>
+
+</header>
+
+
+
+
+
+<body>
+    <!-- Content here -->
+
+  
+  <div class="introContent">
+    <h3 style="text-align: center;">Sticky Navigation Example</h3>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+   
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- MAIN (Center website) -->
+ <div class="main">
+
+  <h3 style="text-align: center;">PORTFOLIO</h3>
+  <hr color="#00bbfffc">
+  
+ 
+  <p>Resize the browser window to see the responsive effect.</p>
+  
+  <!-- Portfolio Gallery Grid -->
+  <!--duplicate as needed -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="mountains.jpg" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="lights.jpg" alt="Lights" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <h3>My Work</h3>
+        <img src="images/arrow.svg" alt="Nature" style="width:20%; object-fit: contain; " >
+        
+        <p>Lorem ipsum..Lorem ipsum..Lorem ipsum..Lorem ipsum..Lorem ipsum..Lorem ipsum..Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="mountains.jpg" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="mountains.jpg" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="lights.jpg" alt="Lights" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="nature.jpg" alt="Nature" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="mountains.jpg" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+  </div>
+<hr color="#00bbfffc">
+
+
+  
+  <div class="Extracontent">
+    <img src="bear.jpg" alt="Bear" style="width:100%">
+    <h3 style="text-align: center;">Some Other Work</h3>
+<br>
+
+
+
+    <h3>Image  Gallery</h3>
+
+<br>
+
+
+
+
+
+
+
+<div class="grid-gallery">
+  <!-- Row 1 -->
+  <img src="path/to/image1.jpg" alt="Image 1" onclick="openFullScreen(this);">
+  <img src="images/arrow2.png" alt="Image 2" style="width: 25%;"  onclick="openFullScreen(this);">
+  <img src="images/exptd.png" alt="Image 3" onclick="openFullScreen(this);">
+  <img src="images/exptd.png" alt="Image 4" onclick="openFullScreen(this);">
+  <!-- Add more rows as needed for a 4x4 grid -->
+
+  <img src="path/to/image1.jpg" alt="Image 1" onclick="openFullScreen(this);">
+  <img src="images/exptd.png" alt="Image 2" onclick="openFullScreen(this);">
+  <img src="path/to/image3.jpg" alt="Image 3" onclick="openFullScreen(this);">
+
+
+
+
+</div>
+
+<!-- Fullscreen Modal -->
+<div id="fullScreenModal" class="modal">
+  <span class="close" onclick="closeFullScreen()">&times;</span>
+  <img class="modal-content" id="fullScreenImage">
+</div>
+
+  
+<hr color="#00bbfffc">
+
+
+
+<h3>Video Gallery</h3>
+
+
+
+
+<div class="video-gallery">
+  <a href="https://www.youtube.com/watch?v=RFDOI24RRAE" target="_blank">
+      <div class="video-thumbnail">
+          <img src="images/exptd.png" alt="Video 1">
+          <!-- Optionally, add a play button overlay -->
+      </div>
+  </a>
+  <a href="https://www.youtube.com/watch?v=VIDEO_ID2" target="_blank">
+      <div class="video-thumbnail">
+          <img src="path/to/thumbnail2.jpg" alt="Video 2">
+          <!-- Optionally, add a play button overlay -->
+      </div>
+  </a>
+  <a href="https://www.youtube.com/watch?v=VIDEO_ID1" target="_blank">
+    <div class="video-thumbnail">
+        <img src="path/to/thumbnail1.jpg" alt="Video 1">
+        <!-- Optionally, add a play button overlay -->
+    </div>
+</a>
+<a href="https://www.youtube.com/watch?v=VIDEO_ID2" target="_blank">
+    <div class="video-thumbnail">
+        <img src="images/arrow2.png" alt="Video 2">
+        <!-- Optionally, add a play button overlay -->
+    </div>
+</a><a href="https://www.youtube.com/watch?v=VIDEO_ID1" target="_blank">
+  <div class="video-thumbnail">
+      <img src="path/to/thumbnail1.jpg" alt="Video 1">
+      <!-- Optionally, add a play button overlay -->
+  </div>
+</a>
+<a href="https://www.youtube.com/watch?v=VIDEO_ID2" target="_blank">
+  <div class="video-thumbnail">
+      <img src="path/to/thumbnail2.jpg" alt="Video 2">
+      <!-- Optionally, add a play button overlay -->
+  </div>
+</a><a href="https://www.youtube.com/watch?v=VIDEO_ID1" target="_blank">
+  <div class="video-thumbnail">
+      <img src="path/to/thumbnail1.jpg" alt="Video 1">
+      <!-- Optionally, add a play button overlay -->
+  </div>
+</a>
+<a href="https://www.youtube.com/watch?v=VIDEO_ID2" target="_blank">
+  <div class="video-thumbnail">
+      <img src="path/to/thumbnail2.jpg" alt="Video 2">
+      <!-- Optionally, add a play button overlay -->
+  </div>
+</a>
+
+</a><a href="https://www.youtube.com/watch?v=VIDEO_ID1" target="_blank">
+  <div class="video-thumbnail">
+      <img src="path/to/thumbnail1.jpg" alt="Video 1">
+      <!-- Optionally, add a play button overlay -->
+  </div>
+</a>
+<a href="https://www.youtube.com/watch?v=VIDEO_ID2" target="_blank">
+  <div class="video-thumbnail">
+      <img src="path/to/thumbnail2.jpg" alt="Video 2">
+      <!-- Optionally, add a play button overlay -->
+  </div>
+</a>
+
+  <!-- Add more thumbnails as needed -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr color="#00bbfffc">
+
+
+
+
+
+
+
+
+    <p>Lorem ipsum..</p>
+  </div>
+  
+  <!-- END MAIN -->
+  </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="Skills">
  
 
+    <!-- About section content -->
+
+
+    Skills section
+
+
+    
+</section>
+
+
+
+
+
+
+
+  <section id="Samples">
+    <!-- Home section content -->
+
+Samples section
+
+</section>
+
+
+<section id="Contact">
+    <!-- Contact section content -->
+
+Contacts section
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Back to Top Button -->
+<a href="javascript:void(0);" onclick="scrollToTop()" class="back-to-top">
+  <img src="images/backToTopImage.png" alt="Back to Top" />
+</a>
+
+
+
+
+
+    <!-- custom js script -->
+        <script src="script.js"></script>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
 
 
 
@@ -34,8 +383,5 @@ Testing....
 
 <footer>
 
+    Footer here 
 </footer>
-
-
-
-</html> 
